@@ -19,7 +19,7 @@ class CategoryController extends Controller
     {
         $category = Category::all();
         $contents = Content::all();
-        return view('dashboard' , ["contents" => $contents , 'category' => $category]);
+        return view('index' , ["contents" => $contents , 'category' => $category]);
     }
     public function beranda()
     {

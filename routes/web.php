@@ -24,7 +24,7 @@ Route::get('/coba', function () {
 
 Auth::routes();
 
-Route::get('/beranda', [App\Http\Controllers\CategoryController::class, 'beranda'])->name('dashboard');
+Route::get('/beranda', [App\Http\Controllers\CategoryController::class, 'beranda'])->name('index');
 Route::get('/home', [App\Http\Controllers\CategoryController::class, 'home'])->name('home');
 Route::get('/info', [App\Http\Controllers\HomeController::class, 'info'])->name('info');
 Route::get('/read/{id}', [App\Http\Controllers\HomeController::class, 'read']);
